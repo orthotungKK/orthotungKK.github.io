@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>童冠愷 Kuan-Kai Tung</title>
+<meta name="author" content="Kuan-Kai Tung">
+<meta property="og:type" content="website">
+<meta property="og:title" content="童冠愷醫師 Kuan-Kai Tung, M.D.">
+<meta property="og:description" content="骨科專科醫師｜門診時間、線上掛號、研究著作">
+<meta property="og:locale" content="zh_TW">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B4475'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='serif'%3E童%3C/text%3E%3C/svg%3E">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}*,*::before,*::after{box-sizing:inherit}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta name="description" content="Kuan-Kai Tung, M.D. Orthopaedic surgeon in Taichung, Taiwan. Research in osteoporosis pharmacoepidemiology, fracture care, and spine surgery outcomes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single reading column like an academic homepage; name + tab nav on top, one view at a time routed by #hash */
+:root{
+  --bg:#F5F7F9; --paper:#FFFFFF; --ink:#18222E; --muted:#5A6676; --line:#DDE3EA; --tint:#EEF2F6;
+  --navy:#1B4475; --teal:#13737F; --on:#FFFFFF;
+  --serif:'Noto Serif TC','Songti TC',Georgia,serif;
+  --sans:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E141B; --paper:#151D27; --ink:#E5EBF1; --muted:#97A4B3; --line:#27323F; --tint:#1B2531;
+  --navy:#6E9BD6; --teal:#3FB0BC; --on:#0E141B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E141B; --paper:#151D27; --ink:#E5EBF1; --muted:#97A4B3; --line:#27323F; --tint:#1B2531;
+  --navy:#6E9BD6; --teal:#3FB0BC; --on:#0E141B; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+a{color:var(--navy);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--navy);outline-offset:2px;border-radius:4px}
+
+header{display:flex;flex-direction:column;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;text-decoration:none;color:var(--ink)}
+.brand b{font-family:var(--serif);font-size:24px;letter-spacing:.1em}
+.brand span{font-size:14px;color:var(--muted);letter-spacing:.06em}
+nav{display:flex;gap:4px 18px;flex-wrap:wrap;font-size:15px}
+nav a{color:var(--muted);text-decoration:none;padding:2px 0;border-bottom:2px solid transparent}
+nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--navy)}
+nav a:hover{color:var(--ink)}
+
+main section{display:none;flex-direction:column;gap:18px;scroll-margin-top:200px}
+main section:target,main:not(:has(section:target)) #about{display:flex}
+h1{font-family:var(--serif);font-size:clamp(30px,6vw,40px);line-height:1.2;margin:0;letter-spacing:.06em;text-wrap:balance}
+h2{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:10px 0 0}
+p{margin:0;max-width:65ch}
+.lede{font-size:17px;color:var(--muted);line-height:1.6}
+ul.plain{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px}
+.zh{background:var(--tint);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--ink)}
+.zh b{display:block;font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:4px}
+.ids{display:flex;flex-wrap:wrap;gap:8px}
+.id{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);text-decoration:none}
+.id i{font-style:normal;font-weight:500;color:var(--teal)}
+
+/* Clinic */
+.grid{display:grid;grid-template-columns:44px repeat(5,minmax(0,1fr));gap:5px}
+.dh{font-size:14px;font-weight:700;text-align:center;padding-bottom:4px;border-bottom:2px solid var(--ink)}
+.rh{font-size:13px;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.c{min-height:56px;border-radius:8px;background:var(--tint);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.2;color:var(--on)}
+.c b{font-size:13px} .c small{font-family:var(--mono);font-size:11px;margin-top:3px;opacity:.9}
+.c.t{background:var(--navy)} .c.j{background:var(--teal)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.note{font-size:13px;color:var(--muted)}
+.places{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.place{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.place h3{margin:0;font-size:16px;display:flex;align-items:center;gap:8px}
+.place h3 i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px}
+.row .v{min-width:0;font-variant-numeric:tabular-nums}
+.cp{font:inherit;font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;flex-shrink:0}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.btn{flex:1 1 auto;text-align:center;padding:9px 12px;border-radius:9px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid var(--line);color:var(--ink)}
+.btn.p{background:var(--k);border-color:var(--k);color:var(--on)}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags span{font-size:14px;padding:4px 11px;border-radius:7px;background:var(--tint)}
+
+/* Research */
+ol.tl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+ol.tl li{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+ol.tl .yr{font-size:13px}
+@media (max-width:420px){ol.tl li{grid-template-columns:1fr;gap:2px}}
+ol.pubs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+ol.pubs li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+ol.pubs li:last-child{border-bottom:1px solid var(--line)}
+.yr{font-family:var(--mono);font-size:14px;color:var(--muted);padding-top:2px}
+.pt{font-weight:500;line-height:1.5}
+.pa{font-size:14px;color:var(--muted);line-height:1.5}
+.pa u{text-decoration:none;color:var(--ink);font-weight:700}
+.pj{font-size:14px;line-height:1.5}
+.pj em{font-style:italic}
+.pj a{font-family:var(--mono);font-size:12.5px}
+.tg{display:inline-block;margin-left:8px;font-size:11px;letter-spacing:.08em;padding:0 7px;border-radius:5px;background:var(--tint);color:var(--muted);vertical-align:1px}
+ol.pubs+h2,ol.tl+h2{margin-top:22px}
+.src{font-size:13px;color:var(--muted)}
+
+dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px}
+dt{color:var(--muted);font-size:14px;padding-top:1px} dd{margin:0}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+@media (prefers-reduced-motion:no-preference){nav a,.btn{transition:color .15s,opacity .15s}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#about"><b>童冠愷</b><span>David Kuan-Kai Tung, M.D.</span></a>
+  <nav aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#clinic">門診 Clinic</a>
+    <a href="#research">Research</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="about" class="view">
+  <h1>Kuan-Kai Tung</h1>
+  <p class="lede">Orthopaedic surgeon · Department of Orthopaedics, Tungs' Taichung MetroHarbor Hospital, Taichung, Taiwan</p>
+  <p>I treat fractures, joint and sports injuries, and osteoporosis, with a focus on orthopaedic trauma. My research covers two threads: radiographic and clinical outcomes of spinal fusion and disc arthroplasty, and what happens to bone health after an orthopaedic operation, including who receives osteoporosis treatment and how those drugs affect the heart and kidneys.</p>
+  <p>Much of this work uses large real-world databases, including Taiwan's National Health Insurance Research Database and international federated EHR networks, alongside single-centre cohorts from fracture liaison and spine surgery practice.</p>
+  <h2>Research interests</h2>
+  <ul class="plain">
+    <li>Osteoporosis pharmacoepidemiology: denosumab, romosozumab, zoledronic acid</li>
+    <li>Secondary fracture prevention and treatment gaps after surgery</li>
+    <li>Geriatric hip fracture co-management and outcomes</li>
+    <li>Lumbar interbody fusion (ALIF, OLIF, TLIF) and cervical disc arthroplasty outcomes</li>
+    <li>Periprosthetic fracture fixation and arthroplasty in rheumatoid arthritis</li>
+  </ul>
+  <div class="zh"><b>中文簡介</b>童冠愷醫師，骨科專科醫師、骨質疏鬆症專科醫師，現任童綜合醫院骨科部主治醫師，曾任臺中榮民總醫院骨科部主治醫師。臨床以骨折創傷、運動傷害與關節手術為主；研究包含脊椎融合與人工椎間盤的影像及臨床預後，以及骨科手術後的骨質疏鬆治療缺口、抗骨鬆藥物的心腎安全性，共發表 22 篇論文，其中 14 篇為第一作者。</div>
+  <div class="ids">
+    <a class="id" href="https://orcid.org/0000-0001-7378-4211" target="_blank" rel="noopener"><i>ORCID</i>0000-0001-7378-4211</a>
+    <a class="id" href="https://www.researchgate.net/profile/Kuan-Kai-Tung" target="_blank" rel="noopener"><i>RG</i>Kuan-Kai-Tung</a>
+  </div>
+</section>
+
+<section id="clinic" class="view">
+  <h1>門診時間</h1>
+  <div class="grid" role="table" aria-label="每週門診時間">
+    <div></div><div class="dh">一</div><div class="dh">二</div><div class="dh">三</div><div class="dh">四</div><div class="dh">五</div>
+    <div class="rh">早診</div>
+    <div class="c"></div><div class="c t"><b>梧棲童</b><small>B161</small></div><div class="c"></div><div class="c"></div><div class="c t"><b>梧棲童</b><small>B166</small></div>
+    <div class="rh">午診</div>
+    <div class="c t"><b>梧棲童</b><small>B162</small></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div>
+    <div class="rh">夜診</div>
+    <div class="c j"><b>家健</b></div><div class="c t"><b>梧棲童</b><small>B166</small></div><div class="c"></div><div class="c"></div><div class="c j"><b>家健</b></div>
+  </div>
+  <div class="legend"><span><i style="background:var(--navy)"></i>童綜合醫院 梧棲院區</span><span><i style="background:var(--teal)"></i>家健聯合診所</span></div>
+  <p class="note">如有異動以院所公告為準。</p>
+
+  <h2>預約掛號</h2>
+  <div class="places">
+    <div class="place" style="--k:var(--navy)">
+      <h3><i style="background:var(--navy)"></i>童綜合醫院 梧棲院區</h3>
+      <div class="row"><span class="v">04-2658-1919 #9</span><button class="cp" data-copy="04-2658-1919#9">複製</button></div>
+      <div class="row"><span class="v">臺中市梧棲區臺灣大道八段699號</span><button class="cp" data-copy="435403 臺中市梧棲區臺灣大道八段699號">複製</button></div>
+      <div class="btns">
+        <a class="btn p" href="https://www.sltung.com.tw/OPD/division.html" target="_blank" rel="noopener">網路掛號</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%AB%A5%E7%B6%9C%E5%90%88%E9%86%AB%E9%99%A2%20%E6%A2%A7%E6%A3%B2%E9%99%A2%E5%8D%80" target="_blank" rel="noopener">地圖</a>
+      </div>
+    </div>
+    <div class="place" style="--k:var(--teal)">
+      <h3><i style="background:var(--teal)"></i>家健聯合診所</h3>
+      <div class="row"><span class="v">04-2461-1188</span><button class="cp" data-copy="04-2461-1188">複製</button></div>
+      <div class="row"><span class="v">臺中市西屯區福科路702號</span><button class="cp" data-copy="臺中市西屯區福科路702號">複製</button></div>
+      <div class="btns">
+        <a class="btn p" href="https://pinmed.co/clinic/o5aow70a" target="_blank" rel="noopener">線上預約</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%B1%AF%E5%8D%80%E7%A6%8F%E7%A7%91%E8%B7%AF702%E8%99%9F" target="_blank" rel="noopener">地圖</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>主治專長</h2>
+  <div class="tags">
+    <span>骨折創傷</span><span>運動醫學・關節鏡</span><span>十字韌帶重建・半月板縫合</span>
+    <span>機器手臂人工膝關節 ROSA</span><span>人工膝／半膝／髖／肩關節置換</span>
+    <span>手外科・腕隧道／肘隧道減壓</span><span>五十肩授動術</span>
+    <span>PRP 超音波導引注射</span><span>一次性自體軟骨修復</span>
+    <span>骨質疏鬆・椎體成形術</span><span>微創脊椎 OLIF／TLIF</span>
+  </div>
+</section>
+
+<section id="research" class="view">
+  <h1>Research</h1>
+  <p class="lede">22 publications in osteoporosis, fracture care, spine surgery and joint disease, 14 as first author. * corresponding author. Also on <a href="https://orcid.org/0000-0001-7378-4211" target="_blank" rel="noopener">ORCID</a>.</p>
+  <h2>Osteoporosis and fracture care</h2><ol class="pubs"><li><span class="yr">2026</span><div><div class="pt">Cardiovascular outcomes associated with romosozumab versus denosumab in chronic kidney disease</div><div class="pa">Chen JY, Chen TY, <u>Tung KK</u>, Deng YL, Lee CY, Li CR, Lee HT</div><div class="pj"><em>Medicina 62(7):1302</em> · <a href="https://doi.org/10.3390/medicina62071302" target="_blank" rel="noopener">10.3390/medicina62071302</a></div></div></li><li><span class="yr">2025</span><div><div class="pt">Using a cemented femoral stem for early Vancouver B2 periprosthetic femur fractures: a decade-long retrospective case review</div><div class="pa"><u>Tung KK</u>, Hsueh LL, Lin YM, Tzeng CY, Wang CC</div><div class="pj"><em>Formosan Journal of Musculoskeletal Disorders</em><span class="tg">In press</span></div></div></li><li><span class="yr">2023</span><div><div class="pt">Similar surgical outcome between locking plate versus nonlocking plate fixation for postoperative Vancouver type B1 periprosthetic femur fractures</div><div class="pa"><u>Tung KK</u>, Hsueh LL, Wang CC, Chen KH, Lee CH, Tzeng CY</div><div class="pj"><em>Formosan Journal of Musculoskeletal Disorders 14(2):53-57</em> · 10.4103/FJMD.FJMD_320</div></div></li><li><span class="yr">2022</span><div><div class="pt">Bone mineral density and osteoporosis in relation to all-cause and cause-specific mortality in NHANES</div><div class="pa"><u>Tung KK</u></div><div class="pj"><em>Bone 164:116518</em> · <a href="https://doi.org/10.1016/j.bone.2022.116518" target="_blank" rel="noopener">10.1016/j.bone.2022.116518</a><span class="tg">Letter</span></div></div></li><li><span class="yr">2022</span><div><div class="pt">Improved outcomes and reduced medical costs through multidisciplinary co-management protocol for geriatric proximal femur fractures: a one-year retrospective study</div><div class="pa">Li Y, <u>Tung KK</u>, Cho YC, Lin SY, Lee CH, Chen CH</div><div class="pj"><em>BMC Geriatrics 22:318</em> · <a href="https://doi.org/10.1186/s12877-022-03014-6" target="_blank" rel="noopener">10.1186/s12877-022-03014-6</a></div></div></li></ol><h2>Spine surgery</h2><ol class="pubs"><li><span class="yr">2026</span><div><div class="pt">Paraspinal muscle fatty infiltration is associated with nonunion and cage subsidence after anterolateral lumbar interbody fusion: a level-specific analysis</div><div class="pj"><em>Scientific Reports</em> · <a href="https://doi.org/10.1038/s41598-026-44810-z" target="_blank" rel="noopener">10.1038/s41598-026-44810-z</a></div></div></li><li><span class="yr">2024</span><div><div class="pt">Risk factors for cervical disc arthroplasty subsidence with Bryan disc: a retrospective observational analysis</div><div class="pa">Lee CY, <u>Tung KK</u>, Tsou HK, Chen WH, Tzeng CY, Lin RH, Chen TY, Huang CW, Kao TH</div><div class="pj"><em>Journal of Clinical Medicine 13(6):1589</em> · <a href="https://doi.org/10.3390/jcm13061589" target="_blank" rel="noopener">10.3390/jcm13061589</a></div></div></li><li><span class="yr">2023</span><div><div class="pt">Comparison of radiographic and clinical outcomes between ALIF, OLIF, and TLIF over 2-year follow-up: a comparative study</div><div class="pa"><u>Tung KK</u>, Tseng WC, Wu YC, Chen KH, Pan CC, Lu WX, Shih CM, Lee CH</div><div class="pj"><em>Journal of Orthopaedic Surgery and Research 18:158</em> · <a href="https://doi.org/10.1186/s13018-023-03652-5" target="_blank" rel="noopener">10.1186/s13018-023-03652-5</a></div></div></li><li><span class="yr">2023</span><div><div class="pt">Dynesys-Transition-Optima does not reduce the risk of adjacent segment degeneration comparing to posterolateral fusion</div><div class="pa"><u>Tung KK</u>, Liu CS, Tseng SC, Lin YH, Wu YC, Shih CM, Chen KH, Lee CH, Pan CC</div><div class="pj"><em>Formosan Journal of Musculoskeletal Disorders 14(3):77-85</em> · 10.4103/FJMD.FJMD_331</div></div></li><li><span class="yr">2023</span><div><div class="pt">Is age-adjusted sagittal parameter important for patients receiving short anterior and oblique anterolateral lumbar surgery?</div><div class="pa"><u>Tung KK</u>, Tseng WC, Wu YC, Chen KH, Pan CC, Shih CM, Lee CH</div><div class="pj"><em>Formosan Journal of Musculoskeletal Disorders 14(1):1-8</em> · 10.4103/FJMD.FJMD_311</div></div></li><li><span class="yr">2022</span><div><div class="pt">The impact of interbody approach and lumbar level on segmental, adjacent, and sagittal alignment in degenerative lumbar pathology</div><div class="pa"><u>Tung KK</u>, Chen KH, Pan CC, Lee CH</div><div class="pj"><em>The Spine Journal 22(9):1585</em> · <a href="https://doi.org/10.1016/j.spinee.2022.05.017" target="_blank" rel="noopener">10.1016/j.spinee.2022.05.017</a><span class="tg">Letter</span></div></div></li><li><span class="yr">2021</span><div><div class="pt">The morphological changes in adjacent segments amongst patients receiving anterior and oblique lumbar interbody fusion: a retrospective study</div><div class="pa"><u>Tung KK</u>, Hsu FW, Ou HC, Chen KH, Pan CC, Lu WX, Chin NC, Shih CM, Wu YC, Lee CH</div><div class="pj"><em>Journal of Clinical Medicine 10(23):5533</em> · <a href="https://doi.org/10.3390/jcm10235533" target="_blank" rel="noopener">10.3390/jcm10235533</a></div></div></li><li><span class="yr">2021</span><div><div class="pt">The radiological outcome in lumbar interbody fusion among rheumatoid arthritis patients: a 20-year retrospective study</div><div class="pa"><u>Tung KK</u>, Wu YC, Chen KH, Pan CC, Lu WX, Chin NC, Shih CM, Hsu FW, Lee CH</div><div class="pj"><em>BMC Musculoskeletal Disorders 22:658</em> · <a href="https://doi.org/10.1186/s12891-021-04531-y" target="_blank" rel="noopener">10.1186/s12891-021-04531-y</a></div></div></li></ol><h2>Joints, sports and rheumatology</h2><ol class="pubs"><li><span class="yr">2023</span><div><div class="pt">Calprotectin in spondyloarthritis and gut inflammation, is it clinically meaningful?</div><div class="pa"><u>Tung KK</u>, Chen ST, Lee CH, Tung CF, Wei JC</div><div class="pj"><em>International Journal of Rheumatic Diseases 26(4):609-612</em> · <a href="https://doi.org/10.1111/1756-185X.14619" target="_blank" rel="noopener">10.1111/1756-185X.14619</a><span class="tg">Review</span></div></div></li><li><span class="yr">2022</span><div><div class="pt">Novel radiographic measurements for operatively treated Haglund&#x27;s deformity</div><div class="pa">Tang SC, Tu KC, Liao WJ, Hsu CT, Shih HT, <u>Tung KK</u>, Wu MH, Wang SP</div><div class="pj"><em>Tomography 8(1):284-292</em> · <a href="https://doi.org/10.3390/tomography8010023" target="_blank" rel="noopener">10.3390/tomography8010023</a></div></div></li><li><span class="yr">2021</span><div><div class="pt">Platelet-rich plasma injection vs sham injection and tendon dysfunction in patients with chronic midportion Achilles tendinopathy</div><div class="pa"><u>Tung KK</u>, Wei JC</div><div class="pj"><em>JAMA 326(19):1975</em> · <a href="https://doi.org/10.1001/jama.2021.16049" target="_blank" rel="noopener">10.1001/jama.2021.16049</a><span class="tg">Letter</span></div></div></li><li><span class="yr">2021</span><div><div class="pt">Opposing trends in total knee and hip arthroplasties for patients with rheumatoid arthritis vs. the general population: a 14-year retrospective study in Taiwan</div><div class="pa"><u>Tung KK</u>, Lee YH, Lin CC, Lee CH, Lin MC, Wei JCC</div><div class="pj"><em>Frontiers in Medicine 8:640275</em> · <a href="https://doi.org/10.3389/fmed.2021.640275" target="_blank" rel="noopener">10.3389/fmed.2021.640275</a></div></div></li></ol><h2>Case reports</h2><ol class="pubs"><li><span class="yr">2025</span><div><div class="pt">Management of lateral patella facet syndrome after primary total knee replacement: three cases report</div><div class="pa">Tzeng WC, <u>Tung KK</u>, Tzeng CY</div><div class="pj"><em>Formosan Journal of Musculoskeletal Disorders</em><span class="tg">In press</span></div></div></li><li><span class="yr">2025</span><div><div class="pt">Retrieval of entrapped broken guide wire in the femoral head and hip joint using alligator forceps: a case report and technique note</div><div class="pa"><u>Tung KK</u>, Chen YS, Lin YM, Wang CC, Chen KH, Tzeng CY</div><div class="pj"><em>Case Reports in Orthopedics</em> · <a href="https://doi.org/10.1155/cro/1400908" target="_blank" rel="noopener">10.1155/cro/1400908</a></div></div></li><li><span class="yr">2023</span><div><div class="pt">Chronic back pain, morning stiffness in a middle-aged man</div><div class="pa"><u>Tung KK</u>, Yeh CC, Lei YC, Leong PY, Wei JC</div><div class="pj"><em>International Journal of Rheumatic Diseases 26(8):1628-1629</em> · <a href="https://doi.org/10.1111/1756-185X.14739" target="_blank" rel="noopener">10.1111/1756-185X.14739</a></div></div></li><li><span class="yr">2021</span><div><div class="pt">IgG4-related pseudotumors mimicking metastases in liver and lungs</div><div class="pa">Yueh HZ, <u><u>Tung KK</u></u>*, Tung CF</div><div class="pj"><em>Case Reports in Gastroenterology 15(1):163-170</em> · <a href="https://doi.org/10.1159/000512410" target="_blank" rel="noopener">10.1159/000512410</a></div></div></li><li><span class="yr">2020</span><div><div class="pt">Treatment of a rotator cuff tear combined with iatrogenic glenoid fracture and shoulder instability: a rare case report</div><div class="pa">Chiang CH, Tsai TC, <u>Tung KK</u>, Chih WH, Yeh ML, Su WR</div><div class="pj"><em>World Journal of Orthopedics 11(11):516-522</em> · <a href="https://doi.org/10.5312/wjo.v11.i11.516" target="_blank" rel="noopener">10.5312/wjo.v11.i11.516</a></div></div></li></ol>
+</section>
+
+<section id="cv" class="view">
+  <h1>CV</h1>
+  <dl>
+    <dt>證照</dt><dd>中華民國骨科專科醫師<br>骨質疏鬆症專科醫師</dd>
+    <dt>語言</dt><dd>中文、台語（母語）· English (fluent) · 日本語（中級）</dd>
+  </dl>
+  <h2>Experience</h2><ol class="tl"><li><span class="yr">2026-</span><div><div class="pt">Attending Physician, Department of Orthopaedics</div><div class="pa">Tungs&#x27; Taichung MetroHarbor Hospital 童綜合醫院</div></div></li><li><span class="yr">2025-2026</span><div><div class="pt">Chief Resident, Department of Orthopaedics</div><div class="pa">Taichung Veterans General Hospital 臺中榮民總醫院</div></div></li><li><span class="yr">2021-2025</span><div><div class="pt">Resident, Department of Orthopaedics</div><div class="pa">Taichung Veterans General Hospital</div></div></li><li><span class="yr">2019-2021</span><div><div class="pt">Post-graduate Year Training</div><div class="pa">Taichung Veterans General Hospital</div></div></li><li><span class="yr">2019</span><div><div class="pt">Clinical Clerkship (abroad)</div><div class="pa">Allgemeines Krankenhaus der Stadt Wien, Vienna, Austria</div></div></li><li><span class="yr">2017-2019</span><div><div class="pt">Internship</div><div class="pa">Taichung Veterans General Hospital · Kaohsiung Chang Gung Memorial Hospital · Tainan Chi Mei Hospital</div></div></li></ol>
+  <h2>Education</h2><ol class="tl"><li><span class="yr">2013-2019</span><div><div class="pt">Doctor of Medicine (M.D.)</div><div class="pa">Chung Shan Medical University 中山醫學大學, Taichung</div></div></li></ol>
+  <h2>Selected presentations</h2><ol class="tl"><li><span class="yr">2026</span><div><div class="pt">ASSH Annual Meeting, Boston</div><div class="pa">Poster: Biomechanical evaluation of safe incisions to mitigate failure in tendon repair</div></div></li><li><span class="yr">2025</span><div><div class="pt">EuroSpine, Copenhagen</div><div class="pa">Poster: Musculoskeletal adverse events following GLP-1 RA initiation in patients with diabetes</div></div></li><li><span class="yr">2025</span><div><div class="pt">EFORT, Lyon</div><div class="pa">Poster: Falling risk and long-term cognitive impairment in geriatric hip fracture</div></div></li><li><span class="yr">2024</span><div><div class="pt">WCO-IOF-ESCEO, London</div><div class="pa">2 posters: methotrexate and osteoporosis risk; BMD and mortality in hip fracture</div></div></li><li><span class="yr">2023</span><div><div class="pt">WCO-IOF-ESCEO, Barcelona</div><div class="pa">2 posters: BMD and mortality (TCVGH-OPC cohort); osteoporosis incidence trends</div></div></li><li><span class="yr">2023</span><div><div class="pt">Global Spine Congress, Prague</div><div class="pa">ePoster: paraspinal fatty infiltration and cage subsidence</div></div></li><li><span class="yr">2022</span><div><div class="pt">Global Spine Congress, Las Vegas</div><div class="pa">Oral (online): ALIF vs OLIF vs TLIF, 2-year outcomes</div></div></li><li><span class="yr">2021</span><div><div class="pt">Global Spine Congress, Paris</div><div class="pa">2 ePosters: sagittal parameters; adjacent disc morphology</div></div></li><li><span class="yr">2020-2023</span><div><div class="pt">Taiwan Orthopaedic Association annual meetings</div><div class="pa">7 oral presentations</div></div></li></ol>
+  <h2>Memberships and training</h2><ul class="plain"><li>AO Spine · AO Trauma · North American Spine Society (NASS) · AAOS 會員</li><li>ISCD/IOF Osteoporosis Essentials: Densitometry, Diagnosis and Management (2022)</li><li>NHRI 台灣精準醫療人才培育計畫 (2023)</li><li>Asia IRCAD 腕關節鏡大體研習營 (2025)；膝關節鏡大體研習營 (2024)</li><li>TJCPM 細胞治療技術醫師訓練課程 (2026)</li><li>Point-of-care Ultrasound 認證 (2019)；骨骼肌肉超音波研習營 (2020)</li></ul>
+</section>
+
+<section id="contact" class="view">
+  <h1>Contact</h1>
+  <p>Research collaboration in pharmacoepidemiology, osteoporosis, and fracture outcomes is welcome. 病人掛號請見<a href="#clinic">門診</a>頁。</p>
+  <div class="ids">
+    <a class="id" href="https://orcid.org/0000-0001-7378-4211" target="_blank" rel="noopener"><i>ORCID</i>0000-0001-7378-4211</a>
+    <a class="id" href="https://www.researchgate.net/profile/Kuan-Kai-Tung" target="_blank" rel="noopener"><i>RG</i>ResearchGate</a>
+    <a class="id" href="https://www.instagram.com/orth.tung/" target="_blank" rel="noopener"><i>IG</i>orth.tung</a>
+  </div>
+  <div class="row" style="max-width:420px"><span class="v" style="font-family:var(--mono)">tungkuankai@gmail.com</span><button class="cp" data-copy="tungkuankai@gmail.com">複製</button></div>
+  <p class="note">This site provides general information and is not a substitute for an in-person medical consultation.</p>
+</section>
+</main>
+
+<footer>© 2026 Kuan-Kai Tung · Last updated October 2026</footer>
+</div>
+
+<script>
+(function(){
+  const views=['about','clinic','research','cv','contact'];
+  function mark(){
+    const h=(location.hash||'').slice(1); const v=views.includes(h)?h:'about';
+    document.querySelectorAll('nav a').forEach(el=>{
+      if(el.getAttribute('href')==='#'+v)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');
+    });
+  }
+  window.addEventListener('hashchange',()=>{mark();window.scrollTo(0,0)}); mark();
+
+  document.querySelectorAll('.cp').forEach(b=>b.addEventListener('click',()=>{
+    const done=()=>{b.textContent='已複製';setTimeout(()=>b.textContent='複製',1500)};
+    const fb=()=>{const s=b.previousElementSibling,r=document.createRange();r.selectNodeContents(s);const g=getSelection();g.removeAllRanges();g.addRange(r);b.textContent='已選取'};
+    try{navigator.clipboard.writeText(b.dataset.copy).then(done,fb)}catch(e){fb()}
+  }));
+
+})();
+</script>
+
+</body>
+</html>
