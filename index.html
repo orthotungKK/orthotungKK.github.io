@@ -17,46 +17,45 @@
 <style>
 /* Layout: single reading column like an academic homepage; name + tab nav on top, one view at a time routed by #hash */
 :root{
-  --bg:#F5F7F9; --paper:#FFFFFF; --ink:#18222E; --muted:#5A6676; --line:#DDE3EA; --tint:#EEF2F6;
-  --navy:#1B4475; --teal:#13737F; --on:#FFFFFF;
+  --bg:#FBF7EE; --paper:#FFFDF8; --ink:#1C2838; --muted:#6E6658; --line:#E6DAC3; --tint:#F3EBDB;
+  --navy:#12315A; --teal:#13737F; --gold:#A57B3F; --on:#FFFFFF;
   --serif:'Noto Serif TC','Songti TC',Georgia,serif;
   --sans:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0E141B; --paper:#151D27; --ink:#E5EBF1; --muted:#97A4B3; --line:#27323F; --tint:#1B2531;
-  --navy:#6E9BD6; --teal:#3FB0BC; --on:#0E141B; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0E141B; --paper:#151D27; --ink:#E5EBF1; --muted:#97A4B3; --line:#27323F; --tint:#1B2531;
-  --navy:#6E9BD6; --teal:#3FB0BC; --on:#0E141B; color-scheme:dark}
+:root{color-scheme:light}
 
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
 .wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
 a{color:var(--navy);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--navy);outline-offset:2px;border-radius:4px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px}
 
 header{display:flex;flex-direction:column;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;text-decoration:none;color:var(--ink)}
-.brand b{font-family:var(--serif);font-size:24px;letter-spacing:.1em}
+.brand b{font-family:var(--serif);font-size:24px;letter-spacing:.1em;color:var(--navy)}
 .brand span{font-size:14px;color:var(--muted);letter-spacing:.06em}
-nav{display:flex;gap:4px 18px;flex-wrap:wrap;font-size:15px}
-nav a{color:var(--muted);text-decoration:none;padding:2px 0;border-bottom:2px solid transparent}
-nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--navy)}
+nav{display:flex;gap:6px 26px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:2px 0 4px;border-bottom:2px solid transparent;display:flex;flex-direction:column;line-height:1.25}
+nav a b{font-size:16px;font-weight:700;letter-spacing:.12em}
+nav a small{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+@media (max-width:480px){nav{gap:6px 0;justify-content:space-between}nav a small{font-size:10px;letter-spacing:.05em}nav a b{font-size:15px;letter-spacing:.06em}}
+nav a[aria-current="page"]{color:var(--navy);border-bottom-color:var(--gold)}
+nav a[aria-current="page"] small{color:var(--gold)}
 nav a:hover{color:var(--ink)}
 
 main section{display:none;flex-direction:column;gap:18px;scroll-margin-top:200px}
 main section:target,main:not(:has(section:target)) #about{display:flex}
-h1{font-family:var(--serif);font-size:clamp(30px,6vw,40px);line-height:1.2;margin:0;letter-spacing:.06em;text-wrap:balance}
+h1{color:var(--navy);font-family:var(--serif);font-size:clamp(30px,6vw,40px);line-height:1.2;margin:0;letter-spacing:.06em;text-wrap:balance}
 h2{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:10px 0 0}
 p{margin:0;max-width:65ch}
 .lede{font-size:17px;color:var(--muted);line-height:1.6}
 ul.plain{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px}
-.zh{background:var(--tint);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--ink)}
+.zh{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--ink)}
 .zh b{display:block;font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:4px}
 .ids{display:flex;flex-wrap:wrap;gap:8px}
 .id{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);text-decoration:none}
-.id i{font-style:normal;font-weight:500;color:var(--teal)}
+.id i{font-style:normal;font-weight:500;color:var(--gold)}
 
 /* Clinic */
 .grid{display:grid;grid-template-columns:44px repeat(5,minmax(0,1fr));gap:5px}
@@ -112,11 +111,11 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 <header>
   <a class="brand" href="#about"><b>童冠愷</b><span>David Kuan-Kai Tung, M.D.</span></a>
   <nav aria-label="Sections">
-    <a href="#about">About</a>
-    <a href="#clinic">門診 Clinic</a>
-    <a href="#research">Research</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
+    <a href="#about"><b>簡介</b><small>About</small></a>
+    <a href="#clinic"><b>門診</b><small>Clinic</small></a>
+    <a href="#research"><b>研究</b><small>Research</small></a>
+    <a href="#cv"><b>經歷</b><small>CV</small></a>
+    <a href="#contact"><b>聯絡</b><small>Contact</small></a>
   </nav>
 </header>
 
